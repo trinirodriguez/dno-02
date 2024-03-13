@@ -95,9 +95,9 @@
 
             barras.forEach((d, i) => {
             graficaBarras.innerHTML += `<g transform="translate(0,${i*50})">
-                <rect x="10" y="10" width="${d.numero/500000}" height="10" />
+                <rect x="10" y="10" width="${d.numero}" height="10" />
                 <text x="10" y="10" fill="white">${d.region}</text>
-                <text x="10" y="${d.numero/500000}">${d.numero}</text>
+                <text x="10" y="${d.numero/100}">${d.numero}</text>
             </g>`
             });
         </script>
